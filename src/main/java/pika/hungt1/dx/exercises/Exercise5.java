@@ -7,6 +7,8 @@ import pika.hungt1.dx.models.Platform;
 
 public class Exercise5 extends DriverInitialization {
 
+    private static final String URL = "https://automationexercise.com/";
+
     @SuppressWarnings("unused")
     public Exercise5(Platform platform) {
         super(platform);
@@ -34,10 +36,10 @@ public class Exercise5 extends DriverInitialization {
     }
 
     private void testCase1() {
-        webDriver.get("https://automationexercise.com/");
+        webDriver.get(URL);
         login();
 
-        
-
+        WebElement addToCartBtn = this.findElementByXpathUntilFound("//body/section/div[@class='container']/div[@class='row']/div[@class='col-sm-9 padding-right']/div[@class='features_items']/div[2]/div[1]/div[1]/div[1]/a[1]");
+        addToCartBtn.click();
     }
 }

@@ -4,6 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 @SuppressWarnings("unused")
+@Deprecated
 public interface IActionLog {
 
     default void logConsole(String ctx) {

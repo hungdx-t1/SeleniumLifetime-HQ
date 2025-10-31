@@ -5,15 +5,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pika.hungt1.dx.interfaces.IActionLog;
 import pika.hungt1.dx.models.Platform;
+import pika.hungt1.dx.utils.DriverSyncUtil;
 
 // import java.time.Duration;
 import java.util.logging.Logger;
 
+@Deprecated
 @SuppressWarnings("unused")
 public abstract class DriverInitialization implements IActionLog {
 
     protected WebDriver webDriver;
-    protected final Logger logger = Logger.getLogger(this.getClass().getSimpleName());
+    protected Logger logger;
     protected boolean autoShutdown = true;
 
     public DriverInitialization(String platform) {
@@ -21,6 +23,7 @@ public abstract class DriverInitialization implements IActionLog {
     }
 
     public DriverInitialization(Platform platform) {
+        this.logger = Logger.getLogger(this.getClass().getName());
         this.webDriver = platform.createDriver();
         if(webDriver == null) {
             throw new IllegalStateException("Không thể khởi tạo WebDriver cho platform: " + platform);
@@ -56,7 +59,9 @@ public abstract class DriverInitialization implements IActionLog {
     }
 
     private void tearDown() {
-        this.forceShutdown();
+        if(autoShutdown) {
+            this.forceShutdown();
+        }
     }
 
     // Có thể implementate
@@ -88,4 +93,7 @@ public abstract class DriverInitialization implements IActionLog {
         return webDriver.findElement(By.id(text));
     }
 
+    protected WebElement findElementByXpathUntilFound(String text) {
+        return DriverSyncUtil.waitUntilVisible(this.webDriver, By.xpath(text));
+    }
 }

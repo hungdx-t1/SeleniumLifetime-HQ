@@ -1,0 +1,37 @@
+1 251105016001 Phát triển phần mềm chuyên nghiệp 2.0 Thứ 2, Tiết: 1-2, Tuần: T2->T14, Phòng: A5.02
+Thứ 3, Tiết: 3-5, Tuần: T2->T15, Phòng: A8.12
+Thứ 4, Tiết: 1-1, Tuần: T14, Phòng: A5.03
+Thứ 4, Tiết: 1-2, Tuần: T2->T13, Phòng: A5.03 Vũ Hoàng Minh 01/09/2025 02/12/2025
+
+
+
+2 251105016501 Phát triển phần mềm hướng đối tượng 3.0 Thứ 2, Tiết: 8-9, Tuần: T13, Phòng: A2.210
+Thứ 2, Tiết: 8-10, Tuần: T2->T12, Phòng: A2.210
+Thứ 4, Tiết: 6-7, Tuần: T2->T12, Phòng: 4T.11.1
+Thứ 7, Tiết: 3-5, Tuần: T2->T12, Phòng: 4T.11.1 Nguyễn Huỳnh Đức Thịnh 01/09/2025 17/11/2025
+
+
+
+3 251105030501 Thiết kế phần mềm 4.0 Thứ 2, Tiết: 6-7, Tuần: T2->T17, Phòng: 4T.11.2
+Thứ 5, Tiết: 1-2, Tuần: T2->T16, Phòng: 4T.11.1
+Thứ 6, Tiết: 3-5, Tuần: T2->T17, Phòng: A8.13 Phạm Văn Hương 01/09/2025 19/12/2025
+
+
+
+4 251105030601 Kiểm thử tự động 4.0 Thứ 3, Tiết: 1-2, Tuần: T2->T16, Phòng: 4T.11.2
+Thứ 5, Tiết: 8-10, Tuần: T2->T16, Phòng: A1.407
+Thứ 7, Tiết: 8-9, Tuần: T2->T16, Phòng: 4T.11.2 Đinh Thị Mỹ Cảnh 02/09/2025 13/12/2025
+
+
+
+5 251105032501 Một số vấn đề hiện đại trong CNPM 3.0 Thứ 5, Tiết: 3-5, Tuần: T2->T16, Phòng: A8.12 Vũ Sơn Lâm 04/09/2025 11/12/2025
+
+
+
+6 251105032801 Kiến trúc hướng dịch vụ 2.0 Thứ 6, Tiết: 8-10, Tuần: T2->T11, Phòng: A8.22
+Chủ Nhật, Tiết: 1-2, Tuần: T2->T10, Phòng: 4T.21.2
+Chủ Nhật, Tiết: 3-4, Tuần: T2->T10, Phòng: 4T.21.2 Trần Hoàng Việt 05/09/2025 07/11/2025
+
+
+
+7 251112018303 Giáo dục thể chất 3 (Cầu lông 3) 1.0 Thứ 4, Tiết: 8-9, Tuần: T3->T17, Phòng: Nhà TDTT.01 Nguyễn Xuân Quắc 10/09/2025 17/12/2025

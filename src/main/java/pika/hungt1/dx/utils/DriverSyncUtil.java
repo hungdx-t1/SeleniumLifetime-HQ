@@ -11,7 +11,15 @@ import java.time.Duration;
 @SuppressWarnings("unused")
 public class DriverSyncUtil {
 
-    private static final int DURATION_OF_WAIT_DEFAULT = 10;
+    private static int DURATION_OF_WAIT_DEFAULT = 10;
+
+    public DriverSyncUtil() {
+        DriverSyncUtil.DURATION_OF_WAIT_DEFAULT = 10;
+    }
+
+    public DriverSyncUtil(int seconds) {
+        DriverSyncUtil.DURATION_OF_WAIT_DEFAULT = seconds;
+    }
 
     public static WebElement waitUntilClickable(WebDriver driver, By by) {
         return waitUntilClickable(driver, DURATION_OF_WAIT_DEFAULT, by);
@@ -49,4 +57,12 @@ public class DriverSyncUtil {
                 .until(ExpectedConditions.presenceOfElementLocated(by));
     }
 
+    public static boolean forElementStale(WebDriver driver, WebElement element) {
+        return forElementStale(driver, DURATION_OF_WAIT_DEFAULT, element);
+    }
+
+    public static boolean forElementStale(WebDriver driver, int seconds, WebElement element) {
+        return new WebDriverWait(driver, Duration.ofSeconds(seconds))
+                .until(ExpectedConditions.stalenessOf(element));
+    }
 }
