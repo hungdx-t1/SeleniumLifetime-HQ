@@ -1,0 +1,8 @@
+<suite name="MyTestSuite">
+    <test name="MyTest">
+        <parameter name="browser" value="edge"/> <!-- Cung cấp giá trị cho parameter browser -->
+        <classes>
+            <class name="pika.hungt1.dx.NewTestTest"/>
+        </classes>
+    </test>
+</suite>
